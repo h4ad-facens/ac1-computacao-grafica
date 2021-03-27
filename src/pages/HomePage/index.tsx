@@ -10,7 +10,7 @@ function HomePage(): ReactElement {
     <S.Container>
       <Engine antialias adaptToDeviceRatio debug canvasId="babylonJS">
         <Scene>
-          <arcRotateCamera name="camera1" target={new Vector3(0, 0, (15 * 4 / 3))} alpha={Math.PI / 2} beta={Math.PI / 4} radius={8} />
+          <arcRotateCamera name="camera1" target={new Vector3(0, 0, (15 * 4 / 3))} alpha={Math.PI} beta={Math.PI / 4} radius={50} />
           <hemisphericLight name="light1" intensity={0.7} direction={Vector3.Up()} />
 
           <Xilofone/>
