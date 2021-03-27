@@ -1,6 +1,7 @@
 import { Color3, Vector3 } from '@babylonjs/core';
+import { ReactElement } from 'react';
 
-const XilofoneVolumeControls = () => {
+const XilofoneVolumeControls = (): ReactElement => {
   const defaultSize = new Vector3(7, .5, 2);
   const defaultYPosition = 1.75;
 

@@ -1,11 +1,11 @@
 import { Color3, Vector3 } from '@babylonjs/core';
-import { useRef } from 'react';
+import { ReactElement, useRef } from 'react';
 import { Mesh as BabylonjsCoreMesh } from '@babylonjs/core/Meshes/mesh';
 import { useClick } from 'react-babylonjs';
 import { musicOne, musicTwo, playSequence } from './musics';
 import useToneStore from '../../../stores/useTone';
 
-const XilofonePedals = () => {
+const XilofonePedals = (): ReactElement => {
   const pedalOneRef = useRef<BabylonjsCoreMesh>(null);
   const pedalTwoRef = useRef<BabylonjsCoreMesh>(null);
   const playNote = useToneStore(state => state.playNote);

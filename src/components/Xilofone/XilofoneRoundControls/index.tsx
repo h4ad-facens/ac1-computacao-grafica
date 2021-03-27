@@ -1,6 +1,7 @@
 import { Color3, Vector3 } from '@babylonjs/core';
+import { ReactElement } from 'react';
 
-const XilofoneRoundControls = () => {
+const XilofoneRoundControls = (): ReactElement => {
   return (<>
     <cylinder name="XilofoneMainBoardRoundControl1" height={1} diameter={4} position={new Vector3(17, 2, 22)} scaling={new Vector3(.8, 1, .8)}>
       <standardMaterial name="XilofoneMainBoardRoundControl1-mat" diffuseColor={Color3.FromHexString('#FFFFFF')} specularColor={Color3.FromHexString('#000000')} />
